@@ -1,3 +1,134 @@
-.dog-pic {
+.container {
+    display: grid;
+    grid-template-areas:
+    'navbar navbar navbar'
+    'welcome welcome welcome'
+    'about-pic about about'
+    'projects projects projects'
+    'contact contact contact';
+    gap: 1rem;
+}
+
+#navbar,
+#welcome,
+#about-pic,
+#about,
+#projects,
+#contact {
+    border: 1px #ccc solid;
+    padding: 0.5rem;
+}
+
+#navbar {
+    grid-area: navbar;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: #111;
+}
+
+#welcome {
+    grid-area: welcome;
+    text-align: center;
+    scroll-margin-top: 50px;
+    background-image: url("./img/lake-view.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+#about-pic {
+    grid-area: about-pic;
+}
+
+#about {
+    grid-area: about;
+    scroll-margin-top: 50px;
+}
+
+#projects {
+    grid-area: projects;
+    text-align: center;
+    scroll-margin-top: 50px;
+}
+
+#contact {
+    grid-area: contact;
+    text-align: center;
+    scroll-margin-top: 50px;
+}
+
+#headshot {
     width: 300px;
+}
+
+header {
+    background-image: url("./img/lake-view.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+header h1 {
+    color: white;
+}
+
+#article1 {
+    background-image: url("./img/project-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#article2 {
+    background-image: url("./img/project-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#article3 {
+    background-image: url("./img/project-3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.flex-project-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-project-box {
+    background: white;
+    width: 500px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }

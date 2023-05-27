@@ -8,10 +8,74 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <p>This is just a placeholder website for now, but don't worry about it.</p>
-    <h5>(I'm doing a coding bootcamp and I'll fill this out more soon.)</h5>
-    <p>To make up for the lack of content, please be content with this picture of a dog:</p>
-    <div ><img class="dog-pic" src="./img/Odin.jpg" /></div>
+    <div class="container">
+        <nav class="menu">
+            <ul id="navbar">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>This is my Header</h1>
+        </header>
+
+        <section id="welcome">
+            <h1>Welcome</h1>
+            <p>This website was created as part of an assignment for the Summer 2023 WeCanCodeIt Bootcamp program I participated in.</p>
+        </section>
+
+
+        <div id="about-pic"><img id="headshot" src="./img/lab-photo.jpg" /></div>
+        <section id="about">
+            <h1>About Me</h1>
+            <h3>Hi! I'm Ben</h3>
+            <p>Current Amazon Learning Ambassador and former research biologist of 15 years. A natural problem solver with strong analytical abilities and a long track record of highly motivated, independently managed work. A jack-of-all-trades who is as comfortable poring over data sets from a desk as they are leading a team of workers on a warehouse floor.</p>
+            <h4>Skills: Java, Excel, PowerPoint, MySQL, Tableau, Python</h4>
+            <h4>Links: <a href="https://github.com/BenjaminPursley"> GitHub </a><a href="https://www.linkedin.com/in/benjamin-pursley/"> LinkedIn </a></h4>
+        </section>
+
+        <section id="projects">
+            <h1>My Projects</h1>
+            <ul class="flex-project-section">
+                <article class="flex-project-box" id="article1">
+                    <a href="https://github.com/BenjaminPursley/WCCI-git-command-testing">
+                        <h3>First GitHub Project</h3>
+                        <p>This was the first GitHub repository I ever initiated and was created while learning my way around Visual Studio Code.</p>
+                    </a>
+                </article>
+
+                <article class="flex-project-box" id="article2">
+                    <a href="https://github.com/BenjaminPursley/benjaminpursley.github.io">
+                        <h3>Professional Portfolio</h3>
+                        <p>As the first assignment of my Summer 2023 WeCanCodeIt Bootcamp program, this project required that I create a public GitHub repository for my personal GitHub Pages website.</p>
+                    </a>
+                </article>
+
+                <article class="flex-project-box" id="article3">
+                    <a href="https://github.com/BenjaminPursley">
+                        <h3>WeCanCodeIt Final Project</h3>
+                        <p>While my experience with GitHub repositories is just beginning, this spot in my portfolio will eventually be home to be final project of the Summer 2023 WeCanCodeIt Bootcamp term.</p>
+                    </a>
+                </article>
+            </ul>            
+        </section>
+
+        <section id="contact">
+            <h1>Contact Info</h1>
+            <a href="https://www.linkedin.com/in/benjamin-pursley/"> LinkedIn </a>
+        </section>
+
+        <article>
+
+        </article>
+
+        <footer>
+
+        </footer>
+    </div>
 </body>
 </html>
